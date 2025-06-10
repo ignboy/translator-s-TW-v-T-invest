@@ -54,9 +54,9 @@ def send_telegram_message(message):
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    try:
-        data = request.json
-        logger.info(f"Received webhook: {data}")
+    data = request.json
+    print("Signal received:", data)
+    return "OK", 200
 
         # Пример формата сигнала:
         # {
@@ -97,11 +97,5 @@ def webhook():
         send_telegram_message(f"❌ Error: {error_msg}")
         return jsonify({"status": "error", "message": error_msg}), 500
 
-
-@app.route('/')
-def index():
-    return "TradingView to Tinkoff Bot is running!"
-
-
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=80)
