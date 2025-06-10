@@ -15,9 +15,9 @@ logger = logging.getLogger(__name__)
 
 # Конфигурация (лучше вынести в отдельный файл или переменные окружения)
 CONFIG = {
-    "t.d59epU-Tw4F8VSdeKDndtvL41FGdU7UenZ4pVCgb9QlJZJidfsvX4cYeLDYAt2rk152_4Z8bC_I03JPjqDWgVQ": os.getenv("TINKOFF_TOKEN", "your_tinkoff_token"),
-    "7599474107:AAFyWhxpcyvE7Bl414flIcAuEVHMmgvI0Vc": os.getenv("TELEGRAM_TOKEN", "your_telegram_token"),
-    "2056726947": os.getenv("TELEGRAM_CHAT_ID", "your_chat_id"),
+    "123": os.getenv("TINKOFF_TOKEN", "your_tinkoff_token"),
+    "123": os.getenv("TELEGRAM_TOKEN", "your_telegram_token"),
+    "123": os.getenv("TELEGRAM_CHAT_ID", "your_chat_id"),
 }
 
 
